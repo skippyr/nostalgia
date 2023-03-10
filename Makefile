@@ -5,7 +5,7 @@ comment=A 32x32 cursor for X11 with retro shape
 # Characteristics
 # Default: 140000
 inner_color=140000
-# Default: #fdebab
+# Default: fdebab
 border_color=fdebab
 
 # Directories
