@@ -1,7 +1,7 @@
 # Nostalgia
 
-A 32x32 cursor for X11 with retro shape inspired by the old cursors from MacOS,
-Windows Xp and default X11 cursor.
+A 32x32 cursor for X11 with retro shape and its own touch of creativity.
+Inspired by the old cursors from MacOS, Windows Xp and default X11 cursor.
 
 ## Dependencies
   + [`becho`](https://github.com/skippyr/becho)
