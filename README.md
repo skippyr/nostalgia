@@ -23,3 +23,7 @@ To uninstall it, use this other command:
 ```bash
 sudo make uninstall
 ```
+
+## Copyright
+
+Copyright (c) 2023, Sherman Rofeman. MIT License.

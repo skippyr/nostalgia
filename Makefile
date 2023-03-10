@@ -13,9 +13,9 @@ build:
 	${scripts_directory}/build.sh "${name}" "${comment}" "${configurations_directory}" "${distribution_directory}"
 
 install:
-	mv "${distribution_directory}" "${installation_directory}"
+	${scripts_directory}/install.sh "${distribution_directory}" "${installation_directory}"
 
 uninstall:
-	rm -rf "${installation_directory}"
+	${scripts_directory}/uninstall.sh "${installation_directory}"
 
 .PHONY: build install uninstall
