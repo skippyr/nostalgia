@@ -24,6 +24,11 @@ To uninstall it, use this other command:
 sudo make uninstall
 ```
 
+If you want you can change the colors of the cursor by modifying the values
+that are in the `Makefile` in the `Characteristics` section. Those values must
+be HEX colors. The default colors are from the [`Tropical Paradise Dark`](https://github.com/skippyr/tropical_paradise)
+color scheme.
+
 ## Copyright
 
 Copyright (c) 2023, Sherman Rofeman. MIT License.

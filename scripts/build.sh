@@ -30,13 +30,14 @@ create_images() {
   local -r source_inner_color=140000
   local -r source_border_color=fdebab
 
-  utilities::echo_topic_i "Creating images."
+  utilities::echo_topic_i "Creating images using $(becho -b "#${inner_color}") as inner color and $(becho -b "#${border_color}") as border color."
 
   rm -rf "${images_directory}"
   mkdir -p "${images_directory}"
 
   for source_image in $(ls "${source_images_directory}"); do
-    convert "${source_images_directory}/${source_image}" -fill "#${inner_color}" -opaque "#${source_inner_color}" "${images_directory}/${source_image}"
+    utilities::echo_topic_ii "Converting $(becho -b ${source_image}) colors."
+    convert "${source_images_directory}/${source_image}" -fill "#${inner_color}" -opaque "#${source_inner_color}" -fill "#${border_color}" -opaque "#${source_border_color}" "${images_directory}/${source_image}"
   done
 }
 
@@ -88,12 +89,12 @@ main() {
 
   utilities::echo_title "build"
 
-  # create_directory_structure "${distribution_directory}"
-  # create_metadata_files "${distribution_directory}" "${name}" "${comment}"
+  create_directory_structure "${distribution_directory}"
+  create_metadata_files "${distribution_directory}" "${name}" "${comment}"
   create_images "${source_images_directory}" "${images_directory}" "${inner_color}" "${border_color}"
-  # build_cursor_files "${configurations_directory}" "${distribution_directory}" "${images_directory}"
-  # create_symbolic_links "${distribution_directory}"
+  build_cursor_files "${configurations_directory}" "${distribution_directory}" "${images_directory}"
+  create_symbolic_links "${distribution_directory}"
 }
 
-main "$1" "$2" "$3" "$4" "$5" "$6" "$7"
+main "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
 
