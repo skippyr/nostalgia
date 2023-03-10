@@ -23,7 +23,7 @@ build_cursor_files() {
 
   echo "Building cursor files."
   for configuration_file in $(ls "${configurations_directory}"); do
-    local -r cursor_file=$(echo ${configuration_file} | cut -f 1 -d .)
+    local cursor_file=$(echo ${configuration_file} | cut -f 1 -d .)
     echo " * Building from ${configuration_file} to ${cursor_file}."
     xcursorgen "${configurations_directory}/${configuration_file}" > "${cursors_directory}/${cursor_file}"
   done
