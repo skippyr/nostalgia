@@ -37,10 +37,10 @@ install_cursor() {
     echo sudo ||
     echo
   )
-  echo "Installing cursor."
+  echo "Installing cursor at \"${installation_directory}\"."
 
   ${sudo} rm -rf "${installation_directory}"
-  ${sudo} cp -rP "${distribution_directory}" "${installation_directory}"
+  ${sudo} mv "${distribution_directory}" "${installation_directory}"
 }
 
 main() {
