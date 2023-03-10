@@ -4,19 +4,22 @@ A 32x32 cursor for X11 with retro shape inspired by the old cursors from MacOS,
 Windows Xp and default X11 cursor.
 
 ## Dependencies
+  + [`becho`](https://github.com/skippyr/becho)
   + `xcursorgen`
   + `imagemagick`
+  + `make`
 
 ## Installation
 
 Right now, this cursor is being developed, but some cursors have already been
-created.
-
-You can build and install the cursor by using the `scripts/install.sh`:
+created and you can test them. To do it, simply use the following command:
 
 ```bash
-sudo ./scripts/install.sh
+sudo make build install
 ```
 
-Right now, there is no automatically way to uninstall it: you would have to
-do it manually.
+To uninstall it, use this other command:
+
+```bash
+sudo make uninstall
+```
