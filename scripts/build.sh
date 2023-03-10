@@ -37,7 +37,10 @@ create_images() {
 
   for source_image in $(ls "${source_images_directory}"); do
     utilities::echo_topic_ii "Converting $(becho -b ${source_image}) colors."
-    convert "${source_images_directory}/${source_image}" -fill "#${inner_color}" -opaque "#${source_inner_color}" -fill "#${border_color}" -opaque "#${source_border_color}" "${images_directory}/${source_image}"
+    convert "${source_images_directory}/${source_image}"\
+      -fill "#${inner_color}" -opaque "#${source_inner_color}"\
+      -fill "#${border_color}" -opaque "#${source_border_color}"\
+      "${images_directory}/${source_image}"
   done
 }
 
@@ -63,13 +66,15 @@ create_symbolic_links() {
   local -r distribution_directory="$1"
   local -r symbolic_link_groups=(
     "hand2>hand1"
+    "ns-resize>n-resize"
+    "ns-resize>s-resize"
   )
 
     utilities::echo_topic_i "Creating symbolic links."
 
   for symbolic_link_group in ${symbolic_link_groups[@]}; do
-    local -r source_file=$(echo ${symbolic_link_group} | cut -f 1 -d ">")
-    local -r target_file=$(echo ${symbolic_link_group} | cut -f 2 -d ">")
+    local source_file=$(echo ${symbolic_link_group} | cut -f 1 -d ">")
+    local target_file=$(echo ${symbolic_link_group} | cut -f 2 -d ">")
 
     utilities::echo_topic_ii "Creating symbolic link between $(becho -b ${source_file}) and $(becho -b ${target_file})."
 
