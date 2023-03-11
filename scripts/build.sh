@@ -72,10 +72,14 @@ create_symbolic_links() {
     "ns-resize>s-resize"
     "ns-resize>top_side"
     "ns-resize>bottom_side"
+    "ns-resize>row-resize"
     "ew-resize>e-resize"
     "ew-resize>w-resize"
     "ew-resize>right_side"
     "ew-resize>left_side"
+    "ew-resize>col-resize"
+    "nw-resize>top_left_corner"
+    "nw-resize>bottom_right_corner"
     "all-scroll>fleur"
   )
 
