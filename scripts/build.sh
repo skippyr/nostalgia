@@ -80,6 +80,10 @@ create_symbolic_links() {
     "ew-resize>col-resize"
     "nw-resize>top_left_corner"
     "nw-resize>bottom_right_corner"
+    "nw-resize>nwse-resize"
+    "ne-resize>top_right_corner"
+    "ne-resize>bottom_left_corner"
+    "ne-resize>nesw-resize"
     "all-scroll>fleur"
   )
 
