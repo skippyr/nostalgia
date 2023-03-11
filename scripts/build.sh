@@ -65,9 +65,12 @@ build_cursor_files() {
 create_symbolic_links() {
   local -r distribution_directory="$1"
   local -r symbolic_link_groups=(
+    "left_ptr>right_ptr"
     "hand2>hand1"
     "ns-resize>n-resize"
     "ns-resize>s-resize"
+    "ew-resize>e-resize"
+    "ew-resize>w-resize"
   )
 
     utilities::echo_topic_i "Creating symbolic links."
