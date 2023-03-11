@@ -85,6 +85,7 @@ create_symbolic_links() {
     "ne-resize>bottom_left_corner"
     "ne-resize>nesw-resize"
     "all-scroll>fleur"
+    "all-scroll>crosshair"
   )
 
     utilities::echo_topic_i "Creating symbolic links."
