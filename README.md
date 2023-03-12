@@ -13,8 +13,7 @@ Inspired by the old cursors from MacOS, Windows Xp and default X11 cursor.
   + `make` - used to access scripts.
 
 ## Installation
-Right now, this cursor is being developed, but some cursors have already been
-created and you can test them. To do it, simply use the following command:
+To do it, simply use the following command:
 
 ```bash
 sudo make build install
