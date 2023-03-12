@@ -12,7 +12,7 @@ utilities::echo_topic_i() {
 
 utilities::echo_topic_ii() {
   local -r topic=$1
-  becho -l "    $(becho -f cyan "-") " -w 80 ${topic}
+  becho -l "  $(becho -bf green ¦)  $(becho -f cyan "-") " -w 80 ${topic}
 }
 
 utilities::abort() {
