@@ -13,7 +13,7 @@ repository_directory=$(shell pwd)
 scripts_directory=${repository_directory}/scripts
 configurations_directory=${repository_directory}/configurations
 source_images_directory=${repository_directory}/source_images
-images_directory=${repository_directory}/images
+images_directory=${repository_directory}/temporary_images
 distribution_directory=${repository_directory}/${name}
 installation_directory=/usr/share/icons/${name}
 
