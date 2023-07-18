@@ -17,7 +17,8 @@ __Nostalgia()
 		[[ -n $b ]] && echo " %F{3}git:(%F{6}$b%F{3})"
 	}
 
-	echo "%(?..[%F{1}%?%f] )%F{6}%n%F{1}@%F{3}%m %F{1}$(Get_Directory)$(Get_Branch)%F{4}%%%%%F{2}>%f "
+	echo "%(?..[%F{1}%?%f] )%F{6}%n%F{1}@%F{3}%m"\
+	     "%F{1}$(Get_Directory)$(Get_Branch)%F{4}%%%%%F{2}>%f "
 }
 
 PROMPT='$(__Nostalgia)'
