@@ -68,7 +68,7 @@ ZSH_THEME=nostalgia/nostalgia
 
 ## Support
 
-Report issues, questions and suggestion through the [issues tab](https://github.com/skippyr/nostalgia).
+Report issues, questions and suggestion through the [issues tab](https://github.com/skippyr/nostalgia/issues).
 
 ## Copyright
 
