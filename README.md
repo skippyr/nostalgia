@@ -11,6 +11,8 @@ A theme for the ZSH shell that is inspired by the Windows CMD prompt.
 > The theme may look different in your setup as its appearance depends of what
 > colors and font you are using for your terminal emulator. Use the preview as
 > just a reference.
+>
+> Theme used for terminal emulator is [Flamerial](https://github.com/skippyr/flamerial).
 
 Here is the description of its design:
 -	If your last command failed, its exit code will appear inside parenthesis. For

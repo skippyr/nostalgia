@@ -10,6 +10,7 @@ __Nostalgia()
 		done
 		echo ${(j./.)d}
 	}
+
 	Get_Branch()
 	{
 		typeset -r b=$(git branch --show-current 2>/dev/null)
