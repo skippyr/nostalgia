@@ -68,7 +68,7 @@ rm -rf ~/.local/share/zsh/themes/nostalgia
 -   Remove the source rule that you have written in the `~/.zshrc` file during
     the installation.
 
-### Support
+## Support
 
 Report issues, questions or suggestions through the [issues tab](https://github.com/skippyr/nostalgia/issues).
 
