@@ -20,7 +20,7 @@ About its design:
 -   It shows your user and host names.
 -   It shows your current directory path abbreviating parent directories by
     their initials.
--   If inside a Git repository, it shows name of the branch.
+-   If inside a Git repository, it shows the name of the branch.
 
 ## Installation
 
@@ -70,7 +70,7 @@ rm -rf ~/.local/share/zsh/themes/nostalgia
 
 ### Support
 
-Report issues, questions or suggestions through the [issues tab](https://github.com/skippyr/nostalgia).
+Report issues, questions or suggestions through the [issues tab](https://github.com/skippyr/nostalgia/issues).
 
 ## Copyright
 
