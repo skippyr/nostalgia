@@ -33,7 +33,7 @@ properly:
 |-|-|
 | `git` | required to provide support to Git repositories. | 
 
-### Installation
+### Procedures
 
 Using a terminal emulator, follow these steps:
 
@@ -55,7 +55,7 @@ source ~/.local/share/zsh/themes/nostalgia/nostalgia.zsh-theme
 -   Reopen your terminal emulator to reload your ZSH session in order to load
     the theme.
 
-### Uninstallation
+## Uninstallation
 
 Using a terminal emulator, follow these steps:
 
