@@ -67,6 +67,8 @@ rm -rf ~/.local/share/zsh/themes/nostalgia
 
 -   Remove the source rule that you have written in the `~/.zshrc` file during
     the installation.
+-   Reopen your terminal emulator to reload your ZSH session in order to load
+    the default theme.
 
 ## Support
 
