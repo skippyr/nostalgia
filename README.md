@@ -12,9 +12,9 @@ A theme for the ZSH shell that is inspired by the default Windows CMD prompt.
 > appeareance also depends on your terminal emulator's theme and font. The
 > theme used is [Flamerial](https://github.com/skippyr/flamerial).
 
-### Design
+### Features
 
-About its design:
+These are the features this theme brings on:
 
 -   If your last command failed, it shows its exit code.
 -   It shows your user and host names.
