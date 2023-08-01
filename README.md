@@ -4,6 +4,10 @@ A theme for the ZSH shell that is inspired by the Windows CMD prompt.
 ![](preview.png)
 
 ## Installation
+### Dependencies
+-	git
+
+### Procedures
 -	Clone this repository.
 ```bash
 git\
