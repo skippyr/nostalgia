@@ -1,6 +1,6 @@
 setopt promptsubst
 
-_Nostalgia()
+__Nostalgia()
 {
 	Get_Directory()
 	{
@@ -25,4 +25,4 @@ _Nostalgia()
 		"%F{1}$(Get_Directory)$(Get_Branch)%F{4}%%%%%F{2}>%f "
 }
 
-PROMPT='$(_Nostalgia)'
+PROMPT='$(__Nostalgia)'
