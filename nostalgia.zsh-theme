@@ -1,8 +1,8 @@
 setopt promptsubst
 
-__Nostalgia()
+function __Nostalgia()
 {
-    Get_Directory()
+    function Get_Directory()
     {
         typeset -a directory_splits=("${(s./.)PWD/${HOME}/~}")
         [[ ${#directory_splits} -gt 1 ]] &&
@@ -14,7 +14,7 @@ __Nostalgia()
         echo ${(j./.)directory_splits}
     }
 
-    Get_Branch()
+    function Get_Branch()
     {
         typeset -r branch=$(git branch --show-current 2>/dev/null)
         [[ ${branch} ]] && echo " %F{3}git:(%F{6}${branch}%F{3})"
