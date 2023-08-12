@@ -9,6 +9,10 @@ Here is a preview that you can check out:
 
 ![](preview.png)
 
+**Note:** the colors used in this shell theme will depend on your terminal
+emulator's theme. This means that it may look different in your setup compared
+to the preview. Theme used is [Flamerial](https://github.com/skippyr/flamerial).
+
 In the prompt, you will find:
 
 -	If you have sourced a virtual environment, its basename.
