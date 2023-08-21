@@ -1,7 +1,7 @@
 # Nostalgia
 ## About
-This repository contains the source code of Nostalgia, a custom theme for the
-ZSH shell that is inspired by the default look of the Windows CMD prompt.
+This repository contains the source code of Nostalgia, a custom one-line theme
+for the ZSH shell.
 
 Here is a preview that you can check it out:
 
@@ -12,6 +12,7 @@ as they depend on your terminal emulator's theme. The theme used in the preview
 is [Flamerial](https://github.com/skippyr/flamerial).
 
 In the prompt, you will find:
+
 - If you have sourced a virtual environment, its base name.
 - The exit code of failed commands.
 - Your user and host names.
